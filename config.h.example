@@ -1,0 +1,17 @@
+// config.h.example - copy this file to config.h and fill in your own values.
+// config.h is .gitignore'd so your secrets never leave your machine.
+
+#pragma once
+
+// --- WiFi -------------------------------------------------------------------
+#define WIFI_SSID      "your-wifi-ssid"
+#define WIFI_PASSWORD  "your-wifi-password"
+
+// --- MQTT broker ------------------------------------------------------------
+#define MQTT_HOST        "broker.hivemq.com"
+#define MQTT_PORT        1883
+#define MQTT_CLIENT_ID   "fluidwire-esp32-uart-bridge"
+#define MQTT_USER        ""
+#define MQTT_PASSWORD    ""
+// topics are derived: <prefix>/uart/json, <prefix>/uart/<key>, <prefix>/cmd, <prefix>/status
+#define MQTT_TOPIC_PREFIX  "fluidwire/demo/bridge"
